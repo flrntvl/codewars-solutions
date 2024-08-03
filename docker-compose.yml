@@ -1,0 +1,8 @@
+services:
+  ruby:
+    image: "ruby:3.2.5"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ruby/:/opt/ruby/
+    working_dir: /opt/ruby/
