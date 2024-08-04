@@ -6,3 +6,10 @@ services:
     volumes:
       - ./ruby/:/opt/ruby/
     working_dir: /opt/ruby/
+  php:
+    build: ./docker/php
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./php/:/opt/php/
+    working_dir: /opt/php/
