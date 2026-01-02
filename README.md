@@ -1,4 +1,4 @@
-# Codewars Solutions 🧩
+# 🧩 Codewars Solutions
 
 [![Codewars Badge](https://www.codewars.com/users/flrntvl/badges/large)](https://www.codewars.com/users/flrntvl)
 
