@@ -1,3 +1,5 @@
+require_relative 'main'
+
 describe "8-kyu#even_or_odd" do
   it 'even_or_odd(1) should return "Odd"' do
     expect(even_or_odd(1)).to eq("Odd")
