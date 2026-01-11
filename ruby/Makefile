@@ -10,4 +10,4 @@ down:
 	@docker compose down
 
 tests:
-	@docker compose exec ruby bundle exec rspec $(PATH_TEST) --dry-run --format documentation
+	@docker compose exec ruby bundle exec rspec $(PATH_TEST) --format documentation
