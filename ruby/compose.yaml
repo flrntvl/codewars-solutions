@@ -1,0 +1,15 @@
+services:
+  ruby:
+    image: ruby:4.0.1
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ruby_gems:/usr/local/bundle
+    environment:
+      BUNDLE_PATH: /usr/local/bundle
+    command: sh -lc "bundle install && tail -f /dev/null"
+    tty: true
+    stdin_open: true
+
+volumes:
+  ruby_gems:
