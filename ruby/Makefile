@@ -6,6 +6,9 @@ KATA_PATH := $(word 2,$(MAKECMDGOALS))
 ruby-up:
 	@$(RUBY_COMPOSE) up -d
 
+ruby-down:
+	@$(RUBY_COMPOSE) down
+
 ruby-shell:
 	@$(RUBY_COMPOSE) exec ruby bash
 
