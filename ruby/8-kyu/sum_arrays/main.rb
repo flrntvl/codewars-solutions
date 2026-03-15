@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+# Challenge : https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/ruby
+
+def sum(numbers)
+  numbers.sum
+end
