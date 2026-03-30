@@ -12,7 +12,9 @@ The package setup is intentionally minimal. The goal here is just to store and r
 
 I keep the package files as small and flat as possible to avoid cluttering file navigation. In practice, that means using an almost empty SwiftPM setup instead of the default `Sources/` and `Tests/` structure whenever possible.
 
-This is a simple practice folder, not a production app. There is no Docker or deployment setup here.
+This is a simple practice folder, not a production app.
+
+There is no Docker or deployment setup here.
 
 ## Swift version
 
