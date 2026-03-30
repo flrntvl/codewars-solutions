@@ -6,21 +6,24 @@ import PackageDescription
 let package = Package(
     name: "simple_multiplication",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "simple_multiplication",
             targets: ["simple_multiplication"]
         ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "simple_multiplication"
+            name: "simple_multiplication",
+            path: ".",
+            exclude: ["Package.swift", ".gitignore", ".build", "test.swift", "Sources", "Tests"],
+            sources: ["solution.swift"]
         ),
         .testTarget(
             name: "simple_multiplicationTests",
-            dependencies: ["simple_multiplication"]
+            dependencies: ["simple_multiplication"],
+            path: ".",
+            exclude: ["Package.swift", ".gitignore", ".build", "solution.swift", "Sources", "Tests"],
+            sources: ["test.swift"]
         ),
     ],
     swiftLanguageModes: [.v6]
